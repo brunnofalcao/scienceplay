@@ -1,0 +1,37 @@
+# robots.txt — Science Play
+# Sobe na raiz: https://www.scienceplay.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# --- Crawlers de IA (essencial para GEO: ChatGPT, Gemini, Perplexity, Claude) ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# --- Bloquear áreas sem valor de indexação ---
+User-agent: *
+Disallow: /api/
+Disallow: /_next/static/chunks/
+
+Sitemap: https://www.scienceplay.com/sitemap.xml
